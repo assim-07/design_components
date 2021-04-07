@@ -1,0 +1,72 @@
+*
+{
+	padding: 0px;
+	margin:0px;
+}
+
+
+.center
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: linear-gradient(red,yellow);
+	-webkit-background-clip:text;
+	/*background-clip: */
+	-webkit-text-fill-color:transparent;
+
+}
+
+span
+{
+	position: relative;
+	font-family: sans-serif;
+	font-size: 48px;
+	/*transition-property: font-size;*/
+	/*transition: 0.3s;*/
+	/*transition:  background*/
+	animation: myAnimate 2s linear infinite
+}
+span:nth-child(1)
+{
+	background: black;
+	-webkit-text-fill-color:white;
+	border-radius: 3px;
+	animation-delay: 0s;
+}
+span:nth-child(2)
+{
+	background: black;
+	-webkit-text-fill-color:white;
+	border-radius: 3px;
+	animation-delay: 0.3s;
+}
+span:nth-child(3)
+{
+	animation-delay: 0.6s;
+}
+span:nth-child(4)
+{
+	animation-delay: 0.9s;
+}
+span:nth-child(5)
+{
+	animation-delay: 1.2s;
+}
+
+@keyframes myAnimate
+{
+	0%
+	{
+		font-size: 48px;
+	}
+	50%
+	{
+		font-size: 64px;
+	}
+	100%
+	{
+		font-size: 48px;
+	}
+}
